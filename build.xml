@@ -3,7 +3,7 @@
     <property environment="env"/>
     <!-- Shows deploying code &amp; running tests for code in directory -->
     <target name="deployCode" depends="proxy">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="ownDev">
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot=".">
         <runTest>TestClassName</runTest>
       </sf:deploy>
     </target>
