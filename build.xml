@@ -8,7 +8,7 @@
                      password="${sf1.password}"
                      serverurl="${sf1.serverurl}"
                      retrieveTarget="src"
-                     unpackaged="package.xml"/>
+                     unpackaged="/src/package.xml"/>
     </target>
 
     <target name="deploy">
