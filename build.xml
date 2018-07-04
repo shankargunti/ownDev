@@ -16,7 +16,7 @@
                      password="${sf2.password}" 
                      serverurl="${sf2.serverurl}" 
                      deployRoot="src"
-                   runAllTests="true"
+                   runAllTests="true" checkOnly="false"
                    logType="Detail" />
     </target>
 
