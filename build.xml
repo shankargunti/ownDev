@@ -1,8 +1,7 @@
-<project name="ownDev" default="deployCode" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="ownDev" default="fetchChanges" basedir="." xmlns:sf="antlib:com.salesforce">
     <property file="build.properties"/>
 
     <property environment="env"/>
-    <target name="deployCode">
 
     <target name="fetchChanges">
         <sf:retrieve username="${sf1.username}"
