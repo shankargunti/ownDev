@@ -3,18 +3,25 @@
 
     <property file="build.properties"/>
 
-    <property environment="prod"/>
- 
-
-
+    <property environment="env"/>
     <target name="deployCode">
-<sf:deploy
-username="g.shankar@slk.com"
-password="salesforce@1"
-sessionId="00D6F0000028xEJ"
-serverurl="https://login.salesforce.com/"
-deployroot="codepkg">
-<runTest>MySampleApex</runTest>
-        </sf:deploy>
-      </target>
+
+    <target name="fetchChanges">
+        <sf:retrieve username="${sf1.username}"
+                     password="${sf1.password}"
+                     serverurl="${sf1.serverurl}"
+                     retrieveTarget="src"
+                     unpackaged="package.xml"/>
+    </target>
+
+    <target name="deploy">
+        <sf:deploy username="${sf2.username}" 
+                     password="${sf2.password}" 
+                     serverurl="${sf2.serverurl}" 
+                     deployRoot="src"
+                   runAllTests="true"
+                   logType="Detail" />
+    </target>
+
+
 </project>
