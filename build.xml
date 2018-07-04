@@ -16,5 +16,5 @@ serverurl="https://login.salesforce.com/"
 deployroot="codepkg">
 <runTest>MySampleApex</runTest>
         </sf:deploy>
-    
+      </target>
 </project>
