@@ -1,6 +1,4 @@
-
 <project name="ownDev" default="deployCode" basedir="." xmlns:sf="antlib:com.salesforce">
-
     <property file="build.properties"/>
 
     <property environment="env"/>
@@ -22,6 +20,5 @@
                    runAllTests="true"
                    logType="Detail" />
     </target>
-
 
 </project>
