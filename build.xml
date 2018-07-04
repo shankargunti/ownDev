@@ -14,7 +14,7 @@ password="salesforce@1"
 sessionId="00D6F0000028xEJ"
 serverurl="https://login.salesforce.com/"
 deployroot="codepkg">
-<runTest>SampleDeployClass</runTest>
+<runTest>MySampleApex</runTest>
         </sf:deploy>
     
 </project>
