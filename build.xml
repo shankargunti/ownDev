@@ -3,39 +3,18 @@
 
     <property file="build.properties"/>
 
-    <property environment="env"/>
+    <property environment="prod"/>
+ 
 
-    <!-- Shows deploying code &amp; running tests for code in directory -->
 
-    <target name="deployCode" depends="proxy">
-
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="test1">
-
-        <runTest>TestClassName</runTest>
-
-      </sf:deploy>
-
-    </target>
-
-    <!-- Shows removing code; only succeeds if done after deployCode -->
-
-    <target name="undeployCode">
-
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="removecodepkg"/>
-
-    </target>
-
-    <target name="proxy">
-
-        <property name="proxy.host" value=" ProxyURL " />
-
-        <property name="proxy.port" value="1234" />
-        <property name="proxy.user" value="UserName" />
-
-        <property name="proxy.pwd" value="Password" />
-
-        <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" proxyuser="${proxy.user}" proxypassword="${proxy.pwd}" />
-
-    </target>
-
+    <target name="deployCode">
+<sf:deploy
+username="g.shankar@slk.com"
+password="salesforce@1"
+sessionId="00D6F0000028xEJ"
+serverurl="https://login.salesforce.com/"
+deployroot="codepkg">
+<runTest>SampleDeployClass</runTest>
+        </sf:deploy>
+    
 </project>
