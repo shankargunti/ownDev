@@ -4,7 +4,7 @@
     <!-- Shows deploying code &amp; running tests for code in directory -->
     <target name="deployCode" depends="proxy">
       <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot=".">
-        <runTest>TestClassName</runTest>
+        <runTest>MySampleApex</runTest>
       </sf:deploy>
     </target>
     <!-- Shows removing code; only succeeds if done after deployCode -->
