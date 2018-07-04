@@ -1,5 +1,5 @@
 
-<project name="Shivasoft ANT Tutorial" default="deployCode" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="ownDev" default="deployCode" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
 
