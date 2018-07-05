@@ -8,14 +8,7 @@
         <members>*</members>
         <name>ApexPage</name>
     </types>
-      <types>
-        <members>*</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomApplicationComponent</name>
-    </types>
+    
     <types>
         <members>*</members>
         <name>CustomFeedFilter</name>
