@@ -1,4 +1,4 @@
-<project name="ownDev" default="fetchChanges" basedir="." xmlns:sf="antlib:com.salesforce" target="deploy" >
+<project name="ownDev" default="deploy" basedir="." xmlns:sf="antlib:com.salesforce"  >
     <property file="build.properties"/>
 
     <property environment="env"/>
