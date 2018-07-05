@@ -7,7 +7,7 @@
                      password="${sf2.password}" 
                      serverurl="${sf2.serverurl}" 
                      deployRoot="src"
-                   runAllTests="true" checkOnly="false"
+                   runAllTests="false" checkOnly="false"
                    logType="Detail" />
     </target>
     <target name="fetchChanges">
