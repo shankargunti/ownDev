@@ -8,13 +8,6 @@
         <members>*</members>
         <name>CustomObject</name>
     </types>
-   <types>
-        <members>*</members>
-        <name>AssignmentRules</name>
-    </types>
-   <types>
-        <members>*</members>
-        <name>EscalationRules</name>
-    </types>
+   
     <version>38.0</version>
 </Package>
