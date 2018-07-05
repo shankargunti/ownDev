@@ -3,9 +3,8 @@
      
     <types>
         <members>*</members>
-        <name>ApexPage</name>
+        <name>Dashboard</name>
     </types>
-     
     
     <version>38.0</version>
 </Package>
