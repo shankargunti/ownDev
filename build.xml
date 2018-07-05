@@ -7,8 +7,9 @@
                      password="${sf2.password}" 
                      serverurl="${sf2.serverurl}" 
                      deployRoot="src"
-                   runAllTests="false" 
-                   logType="Detail" />
+            ignoreWarnings="true"
+            singlePackage="true"
+            purgeOnDelete="true" />
     </target>
     <target name="fetchChanges">
         <sf:retrieve username="${sf1.username}"
