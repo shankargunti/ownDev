@@ -269,6 +269,9 @@
     <layoutAssignments>
         <layout>WorkPerformanceCycle-Performance Cycle Layout - Winter %2716</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>myobj__c-myobj Layout</layout>
+    </layoutAssignments>
     <pageAccesses>
         <apexPage>test</apexPage>
         <enabled>false</enabled>
