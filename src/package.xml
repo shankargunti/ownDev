@@ -45,5 +45,5 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
-    <version>38.0</version>
+    <version>43.0</version>
 </Package>
