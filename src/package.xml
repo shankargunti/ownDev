@@ -5,5 +5,5 @@
         <members>*</members>
         <name>CustomObject</name>
     </types>
-    <version>50.0</version>
+    <version>38.0</version>
 </Package>
