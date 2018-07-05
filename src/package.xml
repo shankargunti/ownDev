@@ -12,13 +12,6 @@
         <members>*</members>
         <name>CustomObject</name>
     </types>
-     <types>
-        <members>*</members>
-        <name>EscalationRules</name>
-    </types>
-       <types>
-        <members>*</members>
-        <name>AssignmentRules</name>
-    </types>
+    
     <version>43.0</version>
 </Package>
