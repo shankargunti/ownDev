@@ -7,12 +7,6 @@ node {
         checkout scm
     }
  
-            stage('hello') {
-               
-                    sh 'echo "Hello World"'
-                }
-            
-       
 stage('Build') {
         // when running in multi-branch job, one must issue this command
     steps {
