@@ -9,9 +9,7 @@ node {
  
 stage('Build') {
         // when running in multi-branch job, one must issue this command
-    steps {
-     sh "AntDefault" 
-    }
+       sh "AntDefault"
     }
 
    
