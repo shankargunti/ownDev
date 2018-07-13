@@ -10,7 +10,7 @@ node {
 stage('Build') {
 def antVersion = 'AntDefault'
 withEnv( ["ANT_HOME=${tool antVersion}"] ) {
-    sh '$ANT_HOME/bin/ant target1 target2'
+   bat '%ANT_HOME%/bin/ant.bat target1 target2'
 }
     }
 }
