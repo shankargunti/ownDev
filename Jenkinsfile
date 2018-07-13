@@ -8,7 +8,7 @@ node {
     }
  
 stage('Build') {
-def antVersion = 'apache-ant-1.10.4'
+def antVersion = 'AntDefault'
 withEnv( ["ANT_HOME=${tool antVersion}"] ) {
     sh '$ANT_HOME/bin/ant target1 target2'
 }
