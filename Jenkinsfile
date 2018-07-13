@@ -5,5 +5,3 @@
   checkout scm
   sh 'ant build'
  }
-   
-}
