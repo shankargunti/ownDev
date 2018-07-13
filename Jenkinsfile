@@ -1,7 +1,14 @@
+ 
+node {
+ 
 
- node  {
-  stage 'Build and Test'
-  env.PATH = "${tool 'AntDefault'}/bin:${env.PATH}"
-  checkout scm
-  sh 'ant build'
- }
+    stage('checkout source') {
+        // when running in multi-branch job, one must issue this command
+        checkout scm
+    }
+ 
+stage('Build') {
+        // when running in multi-branch job, one must issue this command
+bat "AntDefault"
+    }
+  
