@@ -31,10 +31,10 @@
     <!-- Test out deploy and retrieve verbs for package 'mypkg' -->
     <target name="test">
       <!-- Upload the contents of the "mypkg" package -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="mypkg" rollbackOnError="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}"   serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="mypkg" rollbackOnError="true"/>
       <mkdir dir="retrieveOutput"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveOutput" packageNames="MyPkg"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}"   serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveOutput" packageNames="MyPkg"/>
     </target>
 
     <!-- Retrieve an unpackaged set of metadata from your org -->
@@ -42,22 +42,22 @@
     <target name="retrieveUnpackaged">
       <mkdir dir="retrieveUnpackaged"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="unpackaged/package.xml"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}"  serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="unpackaged/package.xml"/>
     </target>
 
     <!-- Retrieve all the items of a particular metadata type -->
     <target name="bulkRetrieve">
-      <sf:bulkRetrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" metadataType="${sf.metadataType}" retrieveTarget="retrieveUnpackaged"/>
+      <sf:bulkRetrieve username="${sf.username}" password="${sf.password}"   serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" metadataType="${sf.metadataType}" retrieveTarget="retrieveUnpackaged"/>
     </target>
 
     <!-- Retrieve metadata for all the packages specified under packageNames -->
     <target name="retrievePkg">
-      <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveOutput" packageNames="${sf.pkgName}"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}"   serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveOutput" packageNames="${sf.pkgName}"/>
     </target>
 
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
     <target name="deployUnpackaged">
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="retrieveUnpackaged" rollbackOnError="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}"   serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="retrieveUnpackaged" rollbackOnError="true"/>
     </target>
 
     <!-- Deploy a zip of metadata files to the org -->
