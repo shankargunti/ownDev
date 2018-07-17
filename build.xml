@@ -22,7 +22,7 @@
    
 
 </project> -->
-<project name="ownDev" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="ownDev" default="bulkRetrieve" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
     <property environment="env"/>
