@@ -5,48 +5,7 @@
         <members>*</members>
         <name>ApexClass</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    
-     
-    <types>
-        <members>*</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomObjectTranslation</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomPageWebLink</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomPermission</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomSite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomTab</name>
-    </types>
+   
      
     <version>38.0</version>
 </Package>
