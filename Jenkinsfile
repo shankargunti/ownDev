@@ -7,6 +7,7 @@ pipeline {
                 def antVersion = 'AntDefault'
 withEnv( ["ANT_HOME=${tool antVersion}"] ) {
    bat '%ANT_HOME%/bin/ant.bat fetchChanges  deploy'
+}
             }
         }
         stage("Unit Tests") {
