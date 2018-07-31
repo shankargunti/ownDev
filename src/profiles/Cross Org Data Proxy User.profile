@@ -280,6 +280,10 @@
         <apexPage>test1</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <tabVisibilities>
+        <tab>HelloWorld</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>XOrg Proxy User</userLicense>
     <userPermissions>
         <enabled>true</enabled>

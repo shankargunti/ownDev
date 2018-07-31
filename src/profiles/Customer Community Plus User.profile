@@ -280,6 +280,10 @@
         <apexPage>test1</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <tabVisibilities>
+        <tab>HelloWorld</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Customer Community Plus</userLicense>
     <userPermissions>
         <enabled>true</enabled>
