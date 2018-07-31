@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo "Building application..."   
+                echo "Building application... new"   
                 def antVersion = 'AntDefault'
 withEnv( ["ANT_HOME=${tool antVersion}"] ) {
    bat '%ANT_HOME%/bin/ant.bat fetchChanges  deploy'
