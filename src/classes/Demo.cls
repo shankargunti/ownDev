@@ -1,4 +1,3 @@
 public class Demo {
-//new class
-//test commit
+//new class new comment
 }
