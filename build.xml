@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
     Author  :   Jitendra Zaa
     Date    :   12/31/2014
@@ -6,3 +7,8 @@
 <project name="Generate Package.xml subfile" default="testPackageXML" basedir="." xmlns:sf="antlib:com.salesforce">
     <import file="GeneratePackage_xml.xml" as="complete"/>
 </project>
+=======
+<project name="ownDev" default="testPackageXML" basedir="." xmlns:sf="antlib:com.salesforce">
+    <import file="GeneratePackage_xml.xml" as="complete"/>
+</project>
+>>>>>>> a45cc26d8a124fe97af8cf414060c8f38f1eef9d
